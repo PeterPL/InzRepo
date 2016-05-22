@@ -22,7 +22,7 @@ namespace InzApp
         Microphone microphone = Microphone.Default;
         byte[] buffer;
         MemoryStream stream = new MemoryStream();
-        SoundEffect sEffect;
+        MusicUtils.SoundNote soundNote;
         // Constructor
         public MainPage()
         {
@@ -32,8 +32,8 @@ namespace InzApp
             dispTimer.Interval = TimeSpan.FromMilliseconds(50);
             dispTimer.Tick += delegate { try { FrameworkDispatcher.Update(); } catch { } };
             dispTimer.Start();
-
-            microphone.BufferReady += new EventHandler<EventArgs>(microphone_BufferReady);
+            soundNote = new MusicUtils.SoundNote();
+            microphone.BufferReady += microphone_BufferReady;
             // Sample code to localize the ApplicationBar
             //BuildLocalizedApplicationBar();
         }
@@ -41,12 +41,23 @@ namespace InzApp
         private void microphone_BufferReady(object sender, EventArgs e)
         {
             microphone.GetData(buffer);
-            stream.Write(buffer, 0, buffer.Length);
+            //stream.Write(buffer, 0, buffer.Length);
+            double[] x = new  double [4096];
+            int index = 0;
+            for (int i = 0; i <4096; i +=2)
+            {
+                x[index] = Convert.ToDouble(BitConverter.ToInt16((byte[])buffer, i)); index++;
+            }
+            double frequency = FrequencyUtils.FindFundamentalFrequency(x, 16000, 50, 2000);
+
+            soundNote.FindNoteByFrequency(frequency);
+           // textFreq.Text = sNote.Note + " " + sNote.Octave.ToString()+" "+sNote.Cents.ToString()+" cents";
+            textFreq.Text = frequency.ToString();
         }
 
         private void startRecording(object sender, RoutedEventArgs e)
         {
-            microphone.BufferDuration = TimeSpan.FromMilliseconds(100);
+            microphone.BufferDuration = TimeSpan.FromMilliseconds(200);
             buffer = new byte[microphone.GetSampleSizeInBytes(microphone.BufferDuration)];
             microphone.Start();
         }
@@ -71,6 +82,9 @@ namespace InzApp
         //    // Create a new menu item with the localized string from AppResources.
         //    ApplicationBarMenuItem appBarMenuItem = new ApplicationBarMenuItem(AppResources.AppBarMenuItemText);
         //    ApplicationBar.MenuItems.Add(appBarMenuItem);
-        //}
+        //
+        
     }
+
+    
 }

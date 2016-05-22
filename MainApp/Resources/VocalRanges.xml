@@ -1,0 +1,92 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<vocalranges>
+  <range>
+    <name>Sopranino</name>
+    <lowestnote>D4</lowestnote>
+    <highestnote>C6</highestnote>
+    <maleorfemale>F</maleorfemale>
+  </range>
+  <range>
+    <name>Soprano</name>
+    <lowestnote>B3</lowestnote>
+    <highestnote>A5</highestnote>
+    <maleorfemale>F</maleorfemale>
+  </range>
+  <range>
+    <name>Mezzo-Soprano</name>
+    <lowestnote>A3</lowestnote>
+    <highestnote>G5</highestnote>
+    <maleorfemale>F</maleorfemale>
+  </range>
+<range>
+    <name>Alto</name>
+    <lowestnote>G3</lowestnote>
+    <highestnote>F5</highestnote>
+    <maleorfemale>F</maleorfemale>
+  </range>
+<range>
+    <name>Contralto</name>
+    <lowestnote>F3</lowestnote>
+    <highestnote>D#5</highestnote>
+    <maleorfemale>F</maleorfemale>
+  </range>
+<range>
+    <name>Countertenor</name>
+    <lowestnote>D#3</lowestnote>
+    <highestnote>C#5</highestnote>
+    <maleorfemale>M</maleorfemale>
+  </range>
+  <range>
+    <name>High Tenor</name>
+    <lowestnote>C#3</lowestnote>
+    <highestnote>B4</highestnote>
+    <maleorfemale>M</maleorfemale>
+  </range><range>
+    <name>Tenor</name>
+    <lowestnote>C3</lowestnote>
+    <highestnote>A#4</highestnote>
+    <maleorfemale>M</maleorfemale>
+  </range>
+  <range>
+    <name>Low Tenor</name>
+    <lowestnote>A#2</lowestnote>
+    <highestnote>G#4</highestnote>
+    <maleorfemale>M</maleorfemale>
+  </range>
+  <range>
+    <name>High Baritone</name>
+    <lowestnote>G#2</lowestnote>
+    <highestnote>F#4</highestnote>
+    <maleorfemale>M</maleorfemale>
+  </range>
+<range>
+    <name>Baritone</name>
+    <lowestnote>G2</lowestnote>
+    <highestnote>F4</highestnote>
+    <maleorfemale>M</maleorfemale>
+  </range>
+  <range>
+    <name>Bass-Baritone</name>
+    <lowestnote>F2</lowestnote>
+    <highestnote>D#4</highestnote>
+    <maleorfemale>M</maleorfemale>
+  </range>
+  <range>
+    <name>Bass</name>
+    <lowestnote>E2</lowestnote>
+    <highestnote>D4</highestnote>
+    <maleorfemale>M</maleorfemale>
+  </range>
+  <range>
+    <name>Low Bass</name>
+    <lowestnote>A#1</lowestnote>
+    <highestnote>G#3</highestnote>
+    <maleorfemale>M</maleorfemale>
+  </range>
+  <range>
+    <name>Octavist</name>
+    <lowestnote>E1</lowestnote>
+    <highestnote>D3</highestnote>
+    <maleorfemale>M</maleorfemale>
+  </range>
+</vocalranges>

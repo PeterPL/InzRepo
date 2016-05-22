@@ -1,0 +1,69 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ClassDiagram MajorVersion="1" MinorVersion="1">
+  <Class Name="InzApp.App" Collapsed="true">
+    <Position X="0.5" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AwAgCSAIAAAAhAAAAAAAAAAAAAAAEQAAAAAAAIIAAAA=</HashCode>
+      <FileName>App.xaml.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="InzApp.FrequencyUtils">
+    <Position X="0.5" Y="1.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAIAAAAAAAAAAAAAAAAAAAAAAgAAAQA=</HashCode>
+      <FileName>FrequencyUtils.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="InzApp.FftAlgorithm" Collapsed="true">
+    <Position X="6" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AEAAAAQAAAAAAAAAAAAAAAAAACAAAAAAAAAAAAAgAAA=</HashCode>
+      <FileName>FrequencyUtils.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="InzApp.LocalizedStrings">
+    <Position X="2.25" Y="1.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAEAAAAAAAAAAAAAAAAAAAEA=</HashCode>
+      <FileName>LocalizedStrings.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="InzApp.MainPage">
+    <Position X="4.25" Y="1.75" Width="2" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAIAAQAAAAACACABIAIAAAAA=</HashCode>
+      <FileName>MainPage.xaml.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="InzApp.MusicUtils">
+    <Position X="7.5" Y="1.75" Width="2.75" />
+    <Compartments>
+      <Compartment Name="Nested Types" Collapsed="false" />
+    </Compartments>
+    <NestedTypes>
+      <Class Name="InzApp.MusicUtils.SoundNote">
+        <TypeIdentifier>
+          <NewMemberFileName>MusicUtils.cs</NewMemberFileName>
+        </TypeIdentifier>
+      </Class>
+    </NestedTypes>
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>MusicUtils.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="InzApp.Resources.AppResources" Collapsed="true">
+    <Position X="2.25" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAgCAAAAAAABEIAAAQAAAAAAAAAAAAIAAIA=</HashCode>
+    </TypeIdentifier>
+  </Class>
+  <Struct Name="InzApp.ComplexNumber">
+    <Position X="0.5" Y="3.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAQCAAAAgAMYBEAAAAAAAAAAAABAAAAAAAAAAA=</HashCode>
+      <FileName>FrequencyUtils.cs</FileName>
+    </TypeIdentifier>
+  </Struct>
+  <Font Name="Segoe UI" Size="9" />
+</ClassDiagram>
